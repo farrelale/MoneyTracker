@@ -1,6 +1,6 @@
-# Money Tracker — Dokumen Desain Produk (PRD)
+# MoniKu — Dokumen Desain Produk (PRD)
 
-Status: Draft v2 (24 Nov 2026). Belum ada kode.
+Status: Draft v3 (24 Nov 2026). Belum ada kode. Wireframe: `docs/wireframe/index.html`.
 Repo: https://github.com/farrelale/MoneyTracker.git
 
 ## 1. Tujuan
@@ -12,7 +12,10 @@ Aplikasi pencatat uang pribadi untuk HP sendiri (tidak dijual, gratis). Mencatat
 | Bentuk | PWA (web app, Add to Home screen dari Chrome Android). APK nanti, bukan sekarang. |
 | Hosting | GitHub Pages (gratis, HTTPS) |
 | Data | Lokal di HP (IndexedDB). Tidak ada server di V1. |
-| Mata uang | Satu mata uang untuk seluruh app: IDR atau USD (pilih di Setting) |
+| Nama app | MoniKu |
+| Mata uang | Satu mata uang untuk seluruh app: IDR atau USD (pilih di Setting). Default IDR. |
+| Font | Bisa dipilih di Setting: Inter (default), Plus Jakarta Sans, Assistant (font Kiro Crew). Semua gratis dari Google Fonts. |
+| Tema awal | Ikut pengaturan HP (light/dark) |
 | Bahasa app | Indonesia |
 | Framework | Web biasa (bukan Flutter) |
 | Chart | Chart.js (ringan) |
@@ -242,8 +245,12 @@ sequenceDiagram
 | Data ke server (Telegram) | Ringkasan saja, bot hanya untuk ID sendiri |
 | PIN tidak mengenkripsi data | Disadari. Enkripsi bisa dipertimbangkan nanti. |
 
-## 11. Pertanyaan Terbuka
-1. Nama aplikasi dan ikon.
-2. Pilihan font dan warna tema final (dibahas di tahap wireframe).
-3. Mata uang default: IDR atau USD?
-4. Mulai dari wireframe (desain layar) sebelum kode.
+## 11. Usulan Navigasi (menunggu review wireframe)
+- Navigasi bawah: Home · Transaksi · (+) · Stats · Lainnya
+- Transaction + History digabung jadi tab "Transaksi" (Daftar / Kalender)
+- Pocket, Budget, Kategori, Export, Backup, Setting ada di "Lainnya"
+
+## 12. Pertanyaan Terbuka
+1. Ikon aplikasi.
+2. Warna tema final.
+3. Persetujuan usulan navigasi di bagian 11.
