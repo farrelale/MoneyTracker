@@ -1,3 +1,5 @@
+import { TransactionList } from '../components/TransactionList';
+
 interface RouteProps {
   path?: string;
 }
@@ -7,9 +9,10 @@ export function Transactions(_props: RouteProps) {
     <div class="page">
       <div class="page-header">
         <h1>Transaksi</h1>
+        <p>Daftar semua transaksi</p>
       </div>
       <div class="page-content">
-        <p>Halaman Transaksi - akan diisi di fase berikutnya</p>
+        <TransactionList />
       </div>
     </div>
   );

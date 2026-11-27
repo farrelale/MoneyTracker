@@ -23,6 +23,19 @@ export async function seedDatabase() {
     { name: 'Lainnya', emoji: '💰', type: 'income', isDefault: true, createdAt: now }
   ]);
 
+  // Seed pocket "Cash" default (tujuan Daily, saldo 0)
+  const existingPockets = await db.pockets.count();
+  if (existingPockets === 0) {
+    await db.pockets.add({
+      name: 'Cash',
+      emoji: '💵',
+      purpose: 'daily',
+      description: 'Uang tunai',
+      initialBalance: 0,
+      createdAt: now
+    });
+  }
+
   // Seed settings default
   await db.settings.bulkAdd([
     { key: 'currency', value: JSON.stringify('IDR'), updatedAt: now },
