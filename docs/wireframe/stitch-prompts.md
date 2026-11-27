@@ -27,8 +27,10 @@ Accessibility rules:
 - Money format Rp25.000 (dot thousands, no decimals); USD $4.00. Tabular numerals.
 - Every icon-only button has a visible or implied label. Visible focus ring in accent.
 
-Navigation (main tabs only): bottom bar with 5 slots —
-Home · Transaksi · [raised round + FAB, center, accent] · Stats · Lainnya. Labels 12px under icons.
+Navigation (main tabs only): bottom bar with 5 equal tabs, no center button —
+Home · Transaksi · Stats · Pocket · Lainnya. Labels 12px under icons.
+Add-transaction button: round 56dp accent FAB with "+", floating bottom-right, 16dp above the nav,
+only on Home and Transaksi.
 Sub-pages (from Lainnya) use a top bar with back arrow "‹" and title, no bottom bar.
 Pickers (kategori, pocket, filter, tanggal) are bottom sheets with a drag handle, max 80% height.
 Every list has an empty state: simple icon + one short line + action button.

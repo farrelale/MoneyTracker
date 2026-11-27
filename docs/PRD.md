@@ -245,10 +245,15 @@ sequenceDiagram
 | Data ke server (Telegram) | Ringkasan saja, bot hanya untuk ID sendiri |
 | PIN tidak mengenkripsi data | Disadari. Enkripsi bisa dipertimbangkan nanti. |
 
-## 11. Usulan Navigasi (menunggu review wireframe)
-- Navigasi bawah: Home · Transaksi · (+) · Stats · Lainnya
+## 11. Navigasi (disetujui, wireframe v2)
+- Navigasi bawah 5 tab sama besar: Home · Transaksi · Stats · Pocket · Lainnya
+- Tombol + (tambah transaksi) mengambang di kanan bawah, hanya di Home dan Transaksi
 - Transaction + History digabung jadi tab "Transaksi" (Daftar / Kalender)
-- Pocket, Budget, Kategori, Export, Backup, Setting ada di "Lainnya"
+- Budget, Kategori, Export, Backup, Setting ada di "Lainnya"
+- Pocket: ringkasan Aset · Utang · Total, lalu dikelompokkan per tujuan (Daily, Investment, Debt) dengan total per grup, diurutkan dari saldo terbesar
+- Stats: Ringkasan AI di atas, setelah filter Hari/Minggu/Bulan/Tahun, sebelum grafik
+- Backup & Restore: tombol info (ⓘ) yang menjelaskan alur backup dan restore
+- Lupa PIN: tombol tetap tampil, fungsinya dibuat di V2
 
 ## 12. Pertanyaan Terbuka
 1. Ikon aplikasi.
