@@ -254,6 +254,8 @@ sequenceDiagram
 - Stats: Ringkasan AI di atas, setelah filter Hari/Minggu/Bulan/Tahun, sebelum grafik
 - Backup & Restore: tombol info (ⓘ) yang menjelaskan alur backup dan restore
 - Lupa PIN: tombol tetap tampil, fungsinya dibuat di V2
+- Stats > Tren: ketuk titik data = tooltip berisi bulan, Masuk, Keluar, Selisih (target sentuh 48dp)
+- Detail Pocket (ketuk pocket di tab Pocket): saldo + perubahan dari periode lalu, filter Minggu/Bulan/Tahun, grafik "Tren saldo" (saldo akhir tiap periode, ketuk titik = saldo), kartu Masuk/Keluar periode ini (termasuk transfer), daftar transaksi pocket itu saja dengan filter Semua/Masuk/Keluar/Transfer, tombol + yang otomatis memilih pocket ini
 
 ## 12. Pertanyaan Terbuka
 1. Ikon aplikasi.
